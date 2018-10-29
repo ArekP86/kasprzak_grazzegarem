@@ -7,5 +7,56 @@
     android:orientation="vertical"
     tools:context="pl.edu.kasprzak.grazzegarem.GraActivity"
     android:weightSum="1">
-    <!-- Czegoś tutaj brakuje -->
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clock" />
+
+    <Button
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START/STOP" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last tries" />
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/lastTries"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best tries" />
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/bestTries"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
